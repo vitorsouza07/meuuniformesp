@@ -1,80 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Uniforme SP</title>
+  <title>Minha Página</title>
   <style>
-    .container {
-      width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    /* Estilos para o menu */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow: hidden;
     }
-    
-    .form-group {
-      margin-bottom: 10px;
+
+    ul.menu li {
+      float: left;
     }
-    
-    label {
+
+    ul.menu li a {
       display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
-    
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 5px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-    }
-    
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #45a049;
+
+    ul.menu li a:hover {
+      background-color: #ddd;
     }
   </style>
-  <script>
-    document.getElementById('login-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Impede o envio do formulário
-    
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-    
-      // Simulação de validação de login
-      if (username === 'admin' && password === 'senha123') {
-        alert('Login bem-sucedido!');
-        // Redirecionar para a página após o login bem-sucedido
-      } else {
-        alert('Credenciais inválidas. Tente novamente.');
-        // Lidar com o erro de login inválido
-      }
-    });
-  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Meu Uniforme SP</h1>
-    <form id="login-form">
-      <div class="form-group">
-        <label for="username">Nome de Usuário:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <button type="submit">Login</button>
-      </div>
-    </form>
-  </div>
+  <ul class="menu">
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Produtos</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+
+  <!-- Inserir o iframe do Google Maps -->
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15DOWBtwaC-JfBxBWaGKw_oNEvc5P11s&ehbc=2E312F" width="640" height="480"></iframe>
+
+  <!-- Outro conteúdo da página -->
+  <h1>Bem-vindo à Minha Página</h1>
+  <p>Adicione aqui o restante do conteúdo da sua página.</p>
 </body>
 </html>
