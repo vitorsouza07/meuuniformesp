@@ -8,7 +8,7 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      background-color: #f1f1f1;
+      background-color: #03009c;
       overflow: hidden;
     }
 
@@ -18,7 +18,7 @@
 
     ul.menu li a {
       display: block;
-      color: #333;
+      color: #fcfcfc;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -27,19 +27,39 @@
     ul.menu li a:hover {
       background-color: #ddd;
     }
+
+    /* Estilos para as legendas */
+    p {
+      font-weight: bold;
+    }
+
+    .emef {
+      color: red;
+    }
+
+    .cei {
+      color: green;
+    }
+
+    .emei {
+      color: yellow;
+    }
   </style>
 </head>
 <body>
   <ul class="menu">
     <li><a href="#">Mapa Meu uniforme SP</a></li>
-    
   </ul>
 
   <!-- Inserir o iframe do Google Maps -->
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15DOWBtwaC-JfBxBWaGKw_oNEvc5P11s&ehbc=2E312F" width="640" height="480"></iframe>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gCHvaSA8NX56KiYzSRpGkSL-H9g7qKw&ehbc=2E312F" width="640" height="480"></iframe>
 
   <!-- Outro conteúdo da página -->
   <h1>Mapeamento de lojas Meu uniforme SP</h1>
-  <p>conteudo interno</p>
+  <p>LEGENDAS: 
+    <span class="emef">PONTOS VERMELHOS (EMEF)</span> - 
+    <span class="cei">PONTOS EM VERDE (CEI)</span> - 
+    <span class="emei">PONTOS EM AMARELO (EMEI)</span>
+  </p>
 </body>
 </html>
