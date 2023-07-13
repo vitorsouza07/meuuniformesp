@@ -44,6 +44,20 @@
     .emei {
       color: yellow;
     }
+
+    /* Estilos para ocupar tela inteira */
+    html,
+    body,
+    #map-container {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
@@ -51,8 +65,11 @@
     <li><a href="#">Mapa Meu uniforme SP</a></li>
   </ul>
 
-  <!-- Inserir o iframe do Google Maps -->
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gCHvaSA8NX56KiYzSRpGkSL-H9g7qKw&ehbc=2E312F" width="640" height="480"></iframe>
+  <!-- Inserir o container para o mapa -->
+  <div id="map-container">
+    <!-- Inserir o iframe do Google Maps -->
+    <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1gCHvaSA8NX56KiYzSRpGkSL-H9g7qKw&ehbc=2E312F"></iframe>
+  </div>
 
   <!-- Outro conteúdo da página -->
   <h1>Mapeamento de lojas Meu uniforme SP</h1>
@@ -63,3 +80,4 @@
   </p>
 </body>
 </html>
+
